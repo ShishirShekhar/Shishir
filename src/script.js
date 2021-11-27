@@ -19,4 +19,11 @@ $(document).ready(function() {
         backSpeed: 60,
         loop: true
     })
+
+    // smooth scroll
+    $('.navbar ul li a').click(function(){
+        // applying again smooth scroll on menu items click
+        $('html').css("scrollBehavior", "smooth");
+    });
+
 });

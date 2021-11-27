@@ -4,6 +4,7 @@
     --my_bgcolor_br: linear-gradient( to bottom right, #ff512f 0%, #dd2476 50%, #ff512f 100% );
     --my_bgcolor_b: linear-gradient( to bottom, #ff512f 0%, #dd2476 50%, #ff512f 100% );
     --my_color: #FD4F32;
+    --page_height: 100vh;
 }
 
 * {
@@ -34,6 +35,11 @@ html::-webkit-scrollbar-track{
 html::-webkit-scrollbar-thumb{
     background: var(--my_bgcolor_b);
     border-radius: 5px;
+}
+
+.page {
+    margin-left: 30rem;
+    height: var(--page_height);
 }
 
 /* body */
@@ -141,8 +147,6 @@ body {
 .home {
     display: flex;
     flex-direction: column;
-    margin-left: 30rem;
-    height: 100vh;
     text-align: center;
     justify-content: center;
 }
@@ -219,10 +223,21 @@ body {
 }
 
 
+/* coming up soon */
+.coming__up__soon {
+    text-align: center;
+    font-size: 5rem;
+}
+
+.coming__up__soon h1 {
+    padding-top: 10rem;
+}
+
+
 /* media query */
 @media screen and (min-height: 1000px) {
-    .home {
-        height: 75vh;
+    :root {
+        --page_height: 75vh
     }
 }
 
@@ -244,7 +259,7 @@ body {
         left: 26rem;
     }
 
-    .home {
+    .page {
         margin-left: 0rem;
     }
 
@@ -294,6 +309,10 @@ body {
 
     .header .navbar ul li a {
         font-size: 1rem;
+    }
+
+    .coming__up__soon {
+        font-size: 3rem;
     }
 }
 
