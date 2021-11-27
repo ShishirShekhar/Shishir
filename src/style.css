@@ -133,7 +133,7 @@ body {
     display: none;
     position: fixed;
     top: 1rem;
-    left: 26rem;
+    left: 40rem;
     background: var(--my_bgcolor_b);
     color: white;
     cursor: pointer;
@@ -248,15 +248,10 @@ body {
 
     #menu {
         display: block;
-        left: 2rem;
     }
 
     .header.active {
         left: 0%;
-    }
-
-    #menu.active {
-        left: 26rem;
     }
 
     .page {
@@ -265,30 +260,32 @@ body {
 
 }
 
-@media screen and (max-width: 639px) {
+@media screen and (max-width: 700px) {
     .header {
         width: 100vw;
     }
 
+    #menu {
+        left: 35rem;
+    }
+
     #menu.active {
-        left: 32rem;
         background: white;
         color: var(--my_color);
     }
 
 }
 
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 600px) {
 
-    #menu.active {
-        left: 29rem;
+    #menu {
+        left: 28rem;
     }
-
 }
 
 @media screen and (max-width: 426px) {
 
-    #menu.active {
+    #menu {
         left: 20rem;
     }
 
@@ -318,7 +315,7 @@ body {
 
 @media screen and (max-width: 376px) {
 
-    #menu.active {
+    #menu {
         left: 18rem;
     }
 
@@ -343,7 +340,7 @@ body {
 
 @media screen and (max-width: 321px) {
 
-    #menu.active {
+    #menu {
         left: 15rem;
     }
 
@@ -351,7 +348,7 @@ body {
 
 @media screen and (max-width: 300px) {
 
-    #menu.active {
+    #menu  {
         left: 12rem;
     }
 
