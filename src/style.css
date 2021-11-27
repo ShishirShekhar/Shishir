@@ -42,6 +42,21 @@ html::-webkit-scrollbar-thumb{
     height: var(--page_height);
 }
 
+.heading {
+    position: relative;
+    font-size: 3rem;
+    padding: 1rem;
+    color: var(--my_color);
+}
+
+.heading::before {
+    position: absolute;
+    content: "";
+    border-bottom: 1px solid white;
+    width: 30rem;
+    top: 5rem;
+}
+
 /* body */
 body {
     background: black;
@@ -222,25 +237,11 @@ body {
     border-radius: 20px;
 }
 
+/* about section */
 
-/* coming up soon */
-.coming__up__soon {
-    text-align: center;
-    font-size: 5rem;
-}
-
-.coming__up__soon h1 {
-    padding-top: 10rem;
-}
 
 
 /* media query */
-@media screen and (min-height: 1000px) {
-    :root {
-        --page_height: 75vh
-    }
-}
-
 @media screen and (max-width: 1023px) {
     .header {
         left: -120%;
@@ -281,6 +282,10 @@ body {
     #menu {
         left: 28rem;
     }
+
+    .heading::before {
+        width: 25rem;
+    }
 }
 
 @media screen and (max-width: 426px) {
@@ -308,15 +313,17 @@ body {
         font-size: 1rem;
     }
 
-    .coming__up__soon {
-        font-size: 3rem;
+    .heading::before {
+        width: 20rem;
     }
 }
+
 
 @media screen and (max-width: 376px) {
 
     #menu {
         left: 18rem;
+        font-size: 2rem;
     }
 
     .home .intro .hi {
@@ -336,20 +343,33 @@ body {
         font-size: 1.5rem;
     }
 
+    .heading::before {
+        width: 15rem;
+    }
+
 }
 
 @media screen and (max-width: 321px) {
 
     #menu {
         left: 15rem;
+        font-size: 1.5rem;
     }
 
 }
 
 @media screen and (max-width: 300px) {
 
-    #menu  {
+    #menu {
         left: 12rem;
+    }
+
+    .heading {
+        font-size: 2rem;
+    }
+
+    .heading::before {
+        width: 5rem;
     }
 
 }
